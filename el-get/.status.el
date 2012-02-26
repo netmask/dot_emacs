@@ -1,0 +1,1 @@
+(:el-get "installed" :magit "installed" :yasnippet "installed")

@@ -115,4 +115,17 @@ by Prelude.")
   (global-set-key (kbd "C-x C-f") 'lusty-file-explorer)
   (global-set-key (kbd "C-x b")   'lusty-buffer-explorer))
 
+(add-to-list 'load-path "~/.emacs.d/site-lisp/mark-multiple")
+
+(require 'inline-string-rectangle)
+(global-set-key (kbd "C-x r t") 'inline-string-rectangle)
+
+(require 'mark-more-like-this)
+(global-set-key (kbd "C-<") 'mark-previous-like-this)
+(global-set-key (kbd "C->") 'mark-next-like-this)
+(global-set-key (kbd "C-M-m") 'mark-more-like-this) ; like the other two, but takes an argument (negative is previous)
+
+
+(setq default-truncate-lines t)
+
 (message "%s" "Emacs Prelude is ready to do thy bidding, Master!")

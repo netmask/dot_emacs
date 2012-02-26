@@ -166,8 +166,8 @@
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 ;; load yasnippet
-(require 'yasnippet)
-(yas/initialize)
+;(require 'yasnippet)
+;(yas/initialize)
 
 ;; projectile is a project management mode
 (require 'projectile)
